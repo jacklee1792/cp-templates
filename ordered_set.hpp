@@ -13,7 +13,7 @@
 using namespace __gnu_pbds;
 
 //Alias for order statistic tree, optional functor template argument for comparison
-template<class T,class C=less<>>
+template<class T,class C=less_equal<>>
 using ordered_set = tree<T,null_type,C,rb_tree_tag,tree_order_statistics_node_update>;
 
 // **************************************************************************************
